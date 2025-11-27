@@ -31,7 +31,7 @@ import {
 // --- API Utility ---
 
 const callGemini = async (prompt: string) => {
-  const apiKey = "AIzaSyBY5ApNAdMEFwh1rL3iMdGu42Tzq4Zor0I"; // PASTE YOUR API KEY HERE IS IT SAVED?
+  const apiKey = import.meta.env.VITE_Ql_API_KEY; // PASTE YOUR API KEY HERE IS IT SAVED?
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
   
   const payload = {
